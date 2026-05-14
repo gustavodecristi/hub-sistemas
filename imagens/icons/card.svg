@@ -1,0 +1,11 @@
+<svg width="18" height="18" viewBox="25 30 460 440" xmlns="http://www.w3.org/2000/svg">
+ 
+  <!-- Corpo do Cartão Verde -->
+  <rect x="56" y="96" width="400" height="320" rx="40" ry="40" fill="#024B31"/>
+  
+  <!-- Faixa Branca (Tarja) -->
+  <rect x="56" y="160" width="400" height="28" fill="white"/>
+  
+  <!-- Chip/Elemento Inferior -->
+  <rect x="368" y="328" width="56" height="32" rx="8" ry="8" fill="white"/>
+</svg>

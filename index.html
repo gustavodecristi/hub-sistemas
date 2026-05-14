@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hub de Sistemas - Unimed</title>
+    <link rel="shortcut icon" href="./imagens/icons/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,155 +14,118 @@
 <body>
     <header>
         <div id="top-bar">
-            <img src="./imagens/logo_unimed.png" alt="">
+            <img src="./imagens/logo_unimed.png" alt="Logo Unimed">
         </div>
         <section id="boas-vindas">
-            <div>
+            <div id="texto">
                 <h1>
                     Bem-vindo ao seu
                     <br><span>Hub de Sistemas</span>
                 </h1>
                 <p>Acesse de forma rápida e prática<br>todos os sistemas e ferramentas<br>que você precisa para o seu dia a dia.</p>
             </div>
-            <img id="figure" src="./imagens/figure.png" alt="">
-            <img id="cuidar-image" src="./imagens/cuidar_image.png" alt="">
+            <div id="imagens">
+                <img id="figure" src="./imagens/figure.png" alt="Figura Ilustrativa">
+                <img id="cuidar-image" src="./imagens/cuidar_image.png" alt="Mensagem Unimed">
+            </div>
         </section>
     </header>
     
     <main>
         <div id="busca-sistema-box">
             <div id="busca-sistemas">
-                <img src="./imagens/icons/lupa.svg" alt="" id="lupa-icon">
+                <img src="./imagens/icons/lupa.svg" alt="Lupa" id="lupa-icon">
                 <input type="text" name="busca-input" id="busca-input" placeholder="Busque por sistemas, ferramentas e mais...">
             </div>
         </div>
 
         <div id="systems">
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>TopDesk</p>
-                </div>
+            <a href="https://unimedmarilia.topdesk.net" target="_blank" class="system-icon">
+                <img src="./imagens/icons/topdesk.svg" alt="Topdesk Logo">
+                <p>TopDesk</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>SGU Card</p>
-                </div>
+            <a href="https://sgucard.unimedmarilia.com.br/cmagnet/Login.do" target="_blank" class="system-icon">
+                <img src="./imagens/icons/card.svg" alt="SGU Card Logo">
+                <p>SGU Card</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>Autorizador</p>
-                </div>
+            <a href="https://sgucard.unimedmarilia.com.br/autsc2/Login.do" target="_blank" class="system-icon">
+                <img src="./imagens/icons/autorizador.svg" alt="Autorizador Logo">
+                <p>Autorizador</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>SGU Web</p>
-                </div>
+            <a href="https://sguweb.unimedmarilia.com.br/sgu-web/index.php" target="_blank" class="system-icon">
+                <img src="./imagens/icons/sgu_web.svg" alt="SGU Web Logo">
+                <p>SGU Web</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>GIU</p>
-                </div>
+            <a href="https://giu.unimed.coop.br" target="_blank" class="system-icon">
+                <img src="./imagens/icons/giu.svg" alt="GIU Logo">
+                <p>GIU</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>Blip</p>
-                </div>
+            <a href="https://login.blip.ai" target="_blank" class="system-icon">
+                <img src="./imagens/icons/blip.svg" alt="Blip Logo">
+                <p>Blip</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>Senior</p>
-                </div>
+            <a href="https://platform.senior.com.br/login" target="_blank" class="system-icon">
+                <img src="./imagens/icons/senior.svg" alt="Senior Logo">
+                <p>Senior</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>EPA</p>
-                </div>
+            <a href="https://unimedmarilia.sysepa.com.br/epa/login.php" target="_blank" class="system-icon">
+                <img src="./imagens/icons/epa.svg" alt="EPA Logo">
+                <p>EPA</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>Join RH</p>
-                </div>
+            <a href="https://joinrh.net/unimedmarilia" target="_blank" class="system-icon">
+                <img src="./imagens/icons/join.svg" alt="Join RH Logo">
+                <p>Join RH</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>Intranet</p>
-                </div>
+            <a href="https://marilia.portalunimed.com.br" target="_blank" class="system-icon">
+                <img src="./imagens/icons/intranet.svg" alt="Intranet Logo">
+                <p>Intranet</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>Ramais</p>
-                </div>
+            <a href="https://ramais.unimedmarilia.com.br" target="_blank" class="system-icon">
+                <img src="./imagens/icons/ramais.svg" alt="Ramais Logo">
+                <p>Ramais</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>Outlook</p>
-                </div>
+            <a href="https://login.microsoftonline.com" target="_blank" class="system-icon">
+                <img src="./imagens/icons/outlook.svg" alt="Outlook Logo">
+                <p>Outlook</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>One Drive</p>
-                </div>
+            <a href="https://unimedmariliacoop-my.sharepoint.com" target="_blank" class="system-icon">
+                <img src="./imagens/icons/one_drive.svg" alt="One Drive Logo">
+                <p>One Drive</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>ZapSign</p>
-                </div>
+            <a href="https://app2.zapsign.com.br/access/sign-in" target="_blank" class="system-icon">
+                <img src="./imagens/icons/zapsign.svg" alt="ZapSign Logo">
+                <p>ZapSign</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>Site Unimed</p>
-                </div>
+            <a href="https://www.unimed.coop.br/site/web/marilia" target="_blank" class="system-icon">
+                <img src="./imagens/icons/site.svg" alt="Site Unimed Logo">
+                <p>Site Unimed</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>MV Soul</p>
-                </div>
+            <a href="http://172.16.10.71" target="_blank" class="system-icon">
+                <img src="./imagens/icons/mv_soul.svg" alt="MV Soul Logo">
+                <p>MV Soul</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>MV GE</p>
-                </div>
+            <a href="http://mvindicadores.unimedmarilia.com.br/SE" target="_blank" class="system-icon">
+                <img src="./imagens/icons/mv_ge.svg" alt="MV GE Logo">
+                <p>MV GE</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>GW</p>
-                </div>
+            <a href="https://gw.unimedmarilia.com.br/gw/#/login" target="_blank" class="system-icon">
+                <img src="./imagens/icons/gw.svg" alt="GW Logo">
+                <p>GW</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>GED Prime</p>
-                </div>
+            <a href="https://ged.unimedmarilia.com.br/login" target="_blank" class="system-icon">
+                <img src="./imagens/icons/ged.svg" alt="GED Prime Logo">
+                <p>GED Prime</p>
             </a>
-            <a href="">
-                <div class="system-icon">
-                    <img src="./imagens/icons/topdesk.svg" alt="teste">
-                    <p>Pirâmide Web</p>
-                </div>
+            <a href="http://172.16.10.114/piramide/asp/Geral/login.aspx" target="_blank" class="system-icon">
+                <img src="./imagens/icons/piramide.svg" alt="Pirâmide Logo">
+                <p>Pirâmide Web</p>
             </a>    
         </div>
     </main>
 
     <footer>
-
+        <img src="./imagens/icon_unimed.png" alt="Logo Unimed">
+        <p>Unimed Marília | Cuidar de você, esse é o plano!</p>
     </footer>
 </body>
 </html>

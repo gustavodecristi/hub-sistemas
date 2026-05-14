@@ -10,62 +10,86 @@
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: 'Poppins', sans-serif;
 }
 
 header{
     background-image: url(./imagens/background.png);
     background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 #top-bar{
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
     border-bottom: solid 1px rgba(255, 255, 255, 0.2);
 }
 
 #top-bar img{
-    width: 9rem;
+    width: 10vw;
+    max-width: 9rem;
+    vertical-align: middle;
 }
 
-#boas-vindas{
-    padding-top: 1.5rem;
-    padding-left: 4.5rem;
+#boas-vindas {
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem 0 0 4.5vw;
 }
 
-#boas-vindas > div,
-#boas-vindas > img {
-    display: inline-block;
-    vertical-align: top;
+#texto {
+    flex: 1;
+    min-width: min(26rem, 100%);
+    padding-bottom: 3.5rem;
 }
 
-#boas-vindas h1{
+#texto h1{
     color: var(--branco);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: clamp(0.8rem, 2vw, 2rem);
     line-height: 1.3;
 }
 
-#boas-vindas h1 span{
+#texto h1 span{
     color: var(--verde-claro);
     font-weight: 700;
-    font-size: 3rem;
+    font-size: clamp(1.18rem, 4vw, 3rem);
+    margin-left: -0.05rem;
 }
 
-#boas-vindas p{
+#texto p{
     color: var(--branco);
     border-left: 3px solid var(--verde-claro);
-    padding-left: 1rem;
+    padding-left: 1vw;
+    font-size: clamp(0.7rem, 1vw, 1rem);
 }
 
-#figure{
-    width: 35rem;
-    padding-left: 30rem;
+#imagens{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin-right: 3vw;
 }
 
-#cuidar-image{
-    height: 10rem;
-    padding: 2rem 0 0 7rem;
+#figure {
+    width: 35vw;
+    max-width: 550px;
+    height: auto;
+}
+
+#cuidar-image {
+    width: 15vw;
+    max-width: 180px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 2rem;
 }
 
 main{
@@ -75,6 +99,7 @@ main{
     border: 1px solid var(--borda);
     border-radius: 1rem;
     background-color: var(--branco);
+    flex: 1;
 }
 
 #busca-sistema-box{
@@ -91,6 +116,14 @@ main{
     box-shadow: 0 2px 5px var(--borda);
     display: flex;
     align-items: center;
+    width: 50vw;
+    max-width: 35rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#busca-sistemas:focus-within {
+    box-shadow: 0 0 2px 1px var(--verde-escuro); /* Cria um brilho suave em volta */
+    background-color: #fff;
 }
 
 #lupa-icon{
@@ -101,33 +134,33 @@ main{
 #busca-input{
     border: none;
     outline: none;
-    width: 25rem;
-}
+    width: 100%;
+}  
 
 #systems{
     display: grid;
-    grid-template-columns: 11rem 11rem 11rem 11rem 11rem 11rem 11rem;
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
     gap: 1.5rem 3rem;
-    justify-content: center;
-}
-
-a{
-    text-decoration: none;
-    color: var(--cinza-fonte);
-}
-
-a:visited{
-    color: var(--cinza-fonte);
+    padding-inline: 4rem;
+    margin-bottom: 2rem;
+    list-style: none;
 }
 
 .system-icon{
     font-size: 0.75rem;
     font-weight: 600;
     text-align: center;
-    border: 1px solid var(--borda);
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 5px var(--borda);
+    text-decoration: none;
+    color: var(--cinza-fonte);
     padding: 0.8rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 1.5px var(--borda);
+    transition-duration: 0.3s;
+	transition-property: box-shadow;
+}
+
+.system-icon:hover{
+		box-shadow: 0 0 2px 2px var(--verde-escuro);
 }
 
 .system-icon img{
@@ -135,4 +168,62 @@ a:visited{
     background-color: var(--fundo-icon);
     padding: 1rem;
     border-radius: 1rem;
+}
+
+footer{
+    background-color: var(--verde-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 4rem;
+    color: var(--branco);
+    font-weight: 300;
+}
+
+footer img{
+    width: 2rem;
+}
+
+
+@media (max-width: 1024px) {
+    #texto{
+        padding-bottom: 2.5rem;
+    }
+
+    #figure{
+        width: 40vw;
+        padding-bottom: 0.5rem;
+    }
+    
+    #cuidar-image{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+    #top-bar img{
+        width: 20vw;
+        max-width: 9rem;
+    }
+
+    #texto{
+        text-align: center;
+    }
+
+    #texto p {
+        border: none;
+    }
+
+    #imagens{
+        display: none;
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+
+    footer img{
+        width: 2rem;
+    }
 }
