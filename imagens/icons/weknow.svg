@@ -1,0 +1,11 @@
+<svg width="450" height="450" viewBox="90 160 335 100" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-width="1">
+
+  <!-- ESQUERDA -->
+  <rect x="110" y="110" width="140" height="140" rx="22" transform="rotate(45 180 180)" fill="#024B31" ></rect>
+
+  <!-- DIREITA -->
+  <rect x="262" y="110" width="140" height="140" rx="22" transform="rotate(45 332 180)" fill="#64bc8c"></rect>
+
+  <!-- INFERIOR -->
+  <rect x="186" y="186" width="140" height="140" rx="22" transform="rotate(45 256 256)" fill="#1c9560"></rect>
+</svg>

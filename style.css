@@ -219,6 +219,10 @@ footer img{
         display: none;
     }
 
+    #systems{
+        justify-content: center;
+    }
+
     footer{
         font-size: 0.8rem;
     }
