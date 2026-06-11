@@ -20,7 +20,7 @@ body{
 }
 
 header{
-    background-image: url(./imagens/background.png);
+    background-image: url(../imagens/background.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -160,7 +160,7 @@ main{
 }
 
 .system-icon:hover{
-		box-shadow: 0 0 2px 2px var(--verde-escuro);
+	box-shadow: 0 0 2px 2px var(--verde-escuro);
 }
 
 .system-icon img{
